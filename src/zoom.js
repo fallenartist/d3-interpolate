@@ -1,3 +1,22 @@
+/*
+import constant from "./constant";
+
+// if rho=0 then no zoom?
+export function rho(y) {
+  return y === 0 ? rhozero : function(a, b) {
+    return b - a ? exponential(a, b, y) : constant(isNaN(a) ? b : a);
+  };
+}
+
+//?
+export default function rhozero(a, b) {
+  var d = b - a;
+  return d ? linear(a, d) : constant(isNaN(a) ? b : a);
+}
+
+// ...
+*/
+
 var rho = Math.SQRT2,
     rho2 = 2,
     rho4 = 4,
